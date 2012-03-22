@@ -1,0 +1,65 @@
+[
+    {
+        "model": "simple_links.category",
+        "pk": 1,
+        "fields": {
+            "title": "1st Category",
+            "slug": "1st-category",
+            "is_active": 1
+        }
+    },
+    {
+        "model": "simple_links.category",
+        "pk": 2,
+        "fields": {
+            "title": "2nd Category",
+            "slug": "2nd-category",
+            "is_active": 1
+        }
+    },
+
+    {
+        "model": "simple_links.link",
+        "pk": 1,
+        "fields": {
+            "title": "1st Link",
+            "category": 1,
+            "description": "My first link",
+            "href": "http://www.google.com",
+            "is_active": 1
+        }
+    },
+    {
+        "model": "simple_links.link",
+        "pk": 2,
+        "fields": {
+            "title": "2nd Link",
+            "category": 1,
+            "description": "My second link",
+            "href": "http://www.google.com",
+            "is_active": 1
+        }
+    },
+    {
+        "model": "simple_links.link",
+        "pk": 3,
+        "fields": {
+            "title": "3rd Link",
+            "category": 1,
+            "description": "My third link",
+            "href": "http://www.google.com",
+            "is_active": 1
+        }
+    },
+    {
+        "model": "simple_links.link",
+        "pk": 4,
+        "fields": {
+            "title": "4th Link",
+            "category": 2,
+            "description": "My fourth link",
+            "href": "http://www.google.com",
+            "is_active": 0
+        }
+    }
+]
