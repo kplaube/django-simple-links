@@ -20,9 +20,11 @@ Usage
 -----
 
 * **In the admin:** add a category called "blogroll" and a few links within this category.
-* **In your template:** load the ``get_link_list`` template tag and call ``{% get_link_list "blogroll" as links, category %}``
+* **In your template:** load ``link_list`` and call ``{% get_link_list "blogroll" as links, category %}``
 
 ``blogroll`` is the category's slug, ``links`` is the variable that will store your links and category is the variable that will store the category object. So you can handle it in "Django way", like this::
+
+            {% load link_list %}
 
             {% get_link_list "blogroll" as links, category %}
             {% if links %}

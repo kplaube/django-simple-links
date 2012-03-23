@@ -16,7 +16,8 @@ setup(
     author_email='kplaube@gmail.com',
 
     url='https://github.com/kplaube/django-simple-links',
-    packages=['simple_links', ],
+    packages=['simple_links',
+              'simple_links.templatetags', ],
     include_package_data=True,
     zip_safe=False,
 
