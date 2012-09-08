@@ -1,6 +1,8 @@
 Django Simple Links
 ===================
 
+.. image:: https://secure.travis-ci.org/kplaube/django-simple-links.png
+
 **Django Simple Links** is a pluggable application that helps you to add
 a blogroll to projects wrote in Django.
 
@@ -34,7 +36,7 @@ Usage
                         {% for link in links %}
                             <li>
                                 <a href="{{ link.href }}"
-                                title="{{ link.description|safe }}">{{ link.title }}</a>
+                                title="{{ link.description }}">{{ link.title }}</a>
                             </li>
                         {% endfor %}
                     </ul>
