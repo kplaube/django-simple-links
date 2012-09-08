@@ -12,7 +12,7 @@ Installation & Configuring
 
 You can use pip to install the app:
 
-``pip install django-simple-contact``
+``pip install django-simple-links``
 
 After that, add ``'simple_links'`` to ``INSTALLED_APPS`` in your project's
 settings.py. Finally, run the ``syncdb`` to add the tables to the database.
