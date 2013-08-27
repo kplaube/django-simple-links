@@ -33,7 +33,7 @@ class Link(models.Model):
     category = models.ForeignKey(Category, verbose_name=_('Category'))
     title = models.CharField(_(u'Title'), max_length=100)
     description = models.TextField(_(u'Description'), blank=True, null=True)
-    href = models.URLField(_(u'Address'), verify_exists=False)
+    href = models.URLField(_(u'Address'))
     is_active = models.BooleanField(_('Active'), default=True)
 
     objects = models.Manager()

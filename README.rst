@@ -2,6 +2,13 @@ Django Simple Links
 ===================
 
 .. image:: https://secure.travis-ci.org/kplaube/django-simple-links.png
+    :target: https://travis-ci.org/kplaube/django-simple-links
+.. image:: https://coveralls.io/repos/kplaube/django-simple-links/badge.png
+    :target: https://coveralls.io/r/kplaube/django-simple-links
+.. image:: https://badge.fury.io/py/django-simple-links.png
+    :target: http://badge.fury.io/py/django-simple-links
+.. image:: https://pypip.in/d/django-simple-links/badge.png
+    :target: https://crate.io/packages/django-simple-links/
 
 **Django Simple Links** is a pluggable application that helps you to add
 a blogroll to projects wrote in Django.
