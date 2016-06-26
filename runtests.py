@@ -4,7 +4,7 @@ import os
 import sys
 from optparse import OptionParser
 
-from django.conf import settings, global_settings
+from django.conf import settings
 
 if not settings.configured:
     settings.configure(
@@ -27,8 +27,8 @@ if not settings.configured:
         SITE_ID=1,
     )
 
-from django.test.simple import DjangoTestSuiteRunner
 
+from django.test.simple import DjangoTestSuiteRunner
 
 def runtests(*test_args, **kwargs):
     if 'south' in settings.INSTALLED_APPS:

@@ -18,7 +18,7 @@ setup(
     url='https://github.com/kplaube/django-simple-links',
     packages=['simple_links',
               'simple_links.templatetags', ],
-    tests_require=['django>=1.3,<1.6', ],
+    tests_require=['django>=1.4,<1.7', ],
     test_suite='runtests.runtests',
     include_package_data=True,
     zip_safe=False,
