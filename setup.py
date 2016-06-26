@@ -9,7 +9,7 @@ setup(
 
     description='Simple bookmarking application for Django projects',
     long_description=('Simple Links is a pluggable app that '
-                      'that lets you easily add links in your website.'),
+                      'that lets you easily add links in your Django project.'),
     keywords='django apps links bookmark',
 
     author='Klaus Laube',
