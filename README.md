@@ -19,8 +19,15 @@ You can install the app through `pip`:
     pip install django-simple-links
 
 After that, add `simples_links` to `INSTALLED_APPS` in your
-`settings.py`. Finally, run `syncdb`/`migrate` for adding tables
-to the database.
+`settings.py`:
+
+    INSTALLED_APPS = (
+        ...
+        'simple_links',
+        ...
+    )
+
+Finally, run `syncdb`/`migrate` to add tables to the database.
 
 ## Usage
 
@@ -51,3 +58,11 @@ you've added through Admin interface:
 That's all!
 
 Contributions are very welcome.
+
+## Changelog
+
+### 0.1.2
+
+* Maintaining compatibility with Django 1.4, 1.5, 1.6 and 1.7
+* Suporting new versions of Django (1.8 and 1.9)
+* Suporting Python 2.7 and Python 3.5
