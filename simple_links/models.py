@@ -25,6 +25,9 @@ class Category(models.Model):
     def __unicode__(self):
         return self.title
 
+    def __str__(self):
+        return self.title
+
 
 class Link(models.Model):
     """
@@ -45,4 +48,7 @@ class Link(models.Model):
         ordering = ('category__title', 'title', )
 
     def __unicode__(self):
+        return self.title
+
+    def __str__(self):
         return self.title
