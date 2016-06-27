@@ -19,6 +19,24 @@ install:
   - pip install coveralls coverage
   - pip install Django==$DJANGO_VERSION
   - python setup.py install
+matrix:
+  exclude:
+    - python: "3.5"
+      env: DJANGO_VERSION=1.4
+    - python: "3.5"
+      env: DJANGO_VERSION=1.4.22
+    - python: "3.5"
+      env: DJANGO_VERSION=1.5
+    - python: "3.5"
+      env: DJANGO_VERSION=1.5.12
+    - python: "3.5"
+      env: DJANGO_VERSION=1.6
+    - python: "3.5"
+      env: DJANGO_VERSION=1.6.11
+    - python: "3.5"
+      env: DJANGO_VERSION=1.7
+    - python: "3.5"
+      env: DJANGO_VERSION=1.7.11
 script: coverage run --source=simple_links manage.py test
 after_success:
   - coveralls
