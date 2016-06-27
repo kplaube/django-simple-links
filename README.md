@@ -56,6 +56,10 @@ Contributions are very welcome.
 
 ## Changelog
 
+### 0.1.3
+
+* Updating documentation
+
 ### 0.1.2
 
 * Maintaining compatibility with Django 1.4, 1.5, 1.6 and 1.7
