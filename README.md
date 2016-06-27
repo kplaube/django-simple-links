@@ -7,11 +7,6 @@
 A pluggable application for adding a list of links (like a blogroll)
 to your Django project.
 
-## Disclaimer
-
-Unfortunately, `simple_links` doesn't support Django>=1.7 and Python>=3.
-But we are working on making the app runs in the last versions of Python and Django.
-
 ## Installing
 
 You can install the app through `pip`:
