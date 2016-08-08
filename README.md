@@ -60,6 +60,10 @@ Contributions are very welcome.
 
 ## Changelog
 
+### 0.1.4
+
+* Fix `setup.py` by adding the `migrations` path to packages (thanks @gvangool)
+
 ### 0.1.3
 
 * Updating documentation
