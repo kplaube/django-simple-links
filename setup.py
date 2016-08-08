@@ -17,6 +17,7 @@ setup(
 
     url='https://github.com/kplaube/django-simple-links',
     packages=['simple_links',
+              'simple_links.migrations',
               'simple_links.templatetags', ],
     include_package_data=True,
     zip_safe=False,
