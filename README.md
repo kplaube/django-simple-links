@@ -52,6 +52,10 @@ you've added through Admin interface:
 
 That's all!
 
+## Contributors
+
+* [@gvangool](https://github.com/gvangool)
+
 Contributions are very welcome.
 
 ## Changelog
