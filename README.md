@@ -54,6 +54,7 @@ That's all!
 
 ## Contributors
 
+* [@pixelexel](https://github.com/pixelexel)
 * [@gvangool](https://github.com/gvangool)
 
 Contributions are very welcome.
