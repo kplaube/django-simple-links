@@ -33,7 +33,8 @@ class Link(models.Model):
     """
     A link entry for blogrolls and similar.
     """
-    category = models.ForeignKey(Category, verbose_name=_('Category'))
+    category = models.ForeignKey(Category, verbose_name=_('Category'),
+                                 on_delete=models.CASCADE)
     title = models.CharField(_(u'Title'), max_length=100)
     description = models.TextField(_(u'Description'), blank=True, null=True)
     href = models.URLField(_(u'Address'))
