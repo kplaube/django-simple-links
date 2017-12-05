@@ -61,6 +61,11 @@ Contributions are very welcome.
 
 ## Changelog
 
+### 0.1.5
+
+* Fix migration to work with Django 2.0
+* Stabilish support for Python 2.7, 3.6 and Django 1.8 (LTS), 1.11 (LTS) and 2.0
+
 ### 0.1.4
 
 * Fix `setup.py` by adding the `migrations` path to packages (thanks @gvangool)
