@@ -26,8 +26,8 @@ Finally, run `syncdb`/`migrate` to add tables to the database.
 
 ## Usage
 
-* **Admin interface:** Add a category called "blogroll" and a few links within this category.
-* **In your template:** Load `link_list` and call `{% get_link_list "blogroll" as links, category %}`.
+- **Admin interface:** Add a category called "blogroll" and a few links within this category.
+- **In your template:** Load `link_list` and call `{% get_link_list "blogroll" as links, category %}`.
 
 `blogroll` turns to be the category slug, `links` and `category` are variables that will keep those information
 you've added through Admin interface:
@@ -54,28 +54,33 @@ That's all!
 
 ## Contributors
 
-* [@pixelexel](https://github.com/pixelexel)
-* [@gvangool](https://github.com/gvangool)
+- [@pixelexel](https://github.com/pixelexel)
+- [@gvangool](https://github.com/gvangool)
 
 Contributions are very welcome.
 
 ## Changelog
 
+### 0.2.0
+
+- Drop support for Python 2.7
+- Drop support for Django lesser than 2.2
+
 ### 0.1.5
 
-* Fix migration to work with Django 2.0
-* Stabilish support for Python 2.7, 3.6 and Django 1.8 (LTS), 1.11 (LTS) and 2.0
+- Fix migration to work with Django 2.0
+- Stabilish support for Python 2.7, 3.6 and Django 1.8 (LTS), 1.11 (LTS) and 2.0
 
 ### 0.1.4
 
-* Fix `setup.py` by adding the `migrations` path to packages (thanks @gvangool)
+- Fix `setup.py` by adding the `migrations` path to packages (thanks @gvangool)
 
 ### 0.1.3
 
-* Updating documentation
+- Updating documentation
 
 ### 0.1.2
 
-* Maintaining compatibility with Django 1.4, 1.5, 1.6 and 1.7
-* Suporting new versions of Django (1.8 and 1.9)
-* Suporting Python 2.7 and Python 3.5
+- Maintaining compatibility with Django 1.4, 1.5, 1.6 and 1.7
+- Suporting new versions of Django (1.8 and 1.9)
+- Suporting Python 2.7 and Python 3.5
