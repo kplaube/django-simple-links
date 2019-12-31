@@ -22,7 +22,7 @@ After that, add `simples_links` to `INSTALLED_APPS` in your
         ...
     )
 
-Finally, run `syncdb`/`migrate` to add tables to the database.
+Finally, run `migrate` to add tables to the database.
 
 ## Usage
 
