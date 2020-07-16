@@ -1,3 +1,5 @@
+from typing import List
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -6,4 +8,4 @@ DATABASES = {
 }
 SECRET_KEY = "dsl"
 INSTALLED_APPS = ['simple_links']
-MIDDLEWARE_CLASSES = []
+MIDDLEWARE_CLASSES: List[str] = []

@@ -20,9 +20,6 @@ class Category(models.Model):
         verbose_name_plural = _('Categories')
         ordering = ('title', )
 
-    def __unicode__(self):
-        return self.title
-
     def __str__(self):
         return self.title
 
@@ -45,9 +42,6 @@ class Link(models.Model):
         verbose_name = _('Link')
         verbose_name_plural = _('Links')
         ordering = ('category__title', 'title', )
-
-    def __unicode__(self):
-        return self.title
 
     def __str__(self):
         return self.title

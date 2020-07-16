@@ -1,19 +1,23 @@
 import re
+
 from django import template
+from django.template.context import Context
+
 from simple_links.models import Link
 
 register = template.Library()
 
 
 class LinkListNode(template.Node):
-    def __init__(self, category_slug, links_var_name, category_var_name):
+    def __init__(self, category_slug: str, links_var_name: str,
+                 category_var_name: str):
         self.category_slug = category_slug
         self.links_var_name = links_var_name
         self.category_var_name = category_var_name
 
-    def render(self, context):
+    def render(self, context: Context) -> str:
         links = (Link.actives.filter(category__slug=self.category_slug)
-            .select_related())
+                 .select_related())
 
         if links:
             category = links[0].category
@@ -22,6 +26,7 @@ class LinkListNode(template.Node):
 
         context[self.links_var_name] = links
         context[self.category_var_name] = category
+
         return ''
 
 
@@ -31,7 +36,7 @@ def do_link_list(parser, token):
     Using category slug as parameter returns a list of links and a
     category instance.
 
-    Usage:: 
+    Usage::
 
         {% load link_list %}
         {% get_link_list "blogroll" as links, category %}
@@ -47,13 +52,13 @@ def do_link_list(parser, token):
     try:
         tag_name, arg = token.contents.split(None, 1)
     except ValueError:
-        raise (template.TemplateSyntaxError("%r tag requires arguments"\
-            % token.contents.split()[0]))
+        raise (template.TemplateSyntaxError("%r tag requires arguments"
+                                            % token.contents.split()[0]))
 
     m = re.search(r'"(.*?)" as (\w+),\s?(\w+)', arg)
     if not m:
-        raise (template.TemplateSyntaxError("%r tag has invalid arguments"\
-            % tag_name))
+        raise (template.TemplateSyntaxError("%r tag has invalid arguments"
+                                            % tag_name))
 
     category_slug, links_var, category_var = m.groups()
     return LinkListNode(category_slug, links_var, category_var)
